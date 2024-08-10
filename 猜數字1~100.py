@@ -36,7 +36,8 @@ while(True):
             if len(num_2) !=2:
                 print(num_1,"的除數有:",num_2)
                 break
-            
+            else:
+                num_2.clear() #若是質數，則不用它
          
         #隨機選一除數，剔除首尾1跟自己
         ran = random.randint(1,len(num_2)-2) 
