@@ -25,7 +25,7 @@ for row in trs:
     
     
     
-    
+    #因為tr 裡藏其他tr ，正常情況下會是None 但因為.text會轉成文字，而None不能轉文字，所以會錯
     if country!= None :
         print('幣別:',country.text.strip(),country_e.text.strip())
         print('即期匯率買入:',SER_buy.text.strip())
